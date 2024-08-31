@@ -17,7 +17,7 @@ At first simply download some tools & config snapshots
 
                                                            Extract last both tar.gz in download path
 
-Steps 1
+Step 1
 
 
 After Extracting the snortrules-snapshot-29111 ->
@@ -53,8 +53,55 @@ Step 3 ( As per change the line )
 ![Screenshot 2024-08-31 at 3 12 30 PM](https://github.com/user-attachments/assets/76969923-29cd-4bdd-a755-540e940c3418)
 
 
+Step 4
 
 
+Create some files
+
+  Create file in C:\Snort\rules ->  Copy blacklist.rules file -> paste there -> rename the paste file -> rename : whitelist.rules -> open the file and change name internal in notepad++
+![Screenshot 2024-08-31 at 3 15 29 PM](https://github.com/user-attachments/assets/d0989d49-f892-4eb3-9feb-f3ced9a7c5bd)
 
 
+Step 5
+Carefully check the presence of these files
+![Screenshot 2024-08-31 at 3 15 49 PM](https://github.com/user-attachments/assets/9c400604-d465-45f5-bb2b-31f3409f998b)
 
+
+Step 6
+
+![Screenshot 2024-08-31 at 3 16 42 PM](https://github.com/user-attachments/assets/43cb2138-5bd2-4190-af39-18c9a8eef62b)
+
+
+Step 7
+sl.no is not might same because network presence may differ , please check your sl.no then put 
+
+    Important segment carefully handle
+
+
+    
+      Open CMD in administrator 
+      | 
+      run this command (cd C:\Snort\bin) 
+      |
+      snort.exe -V
+      |
+      snort -W ( Mind the sl.no present in list as HOME_NET )
+      |
+       snort -i (sl.no) -c C:\Snort\etc\snort.conf -T (Test)
+      |
+       snort -i (sl.no) -c C:\Snort\etc\snort.conf -A console  (Start Engine)
+      |
+      Test ping , nmap -Pn , ddos from another pc 
+      |
+      Ctrl + C ( For stop the program )
+      |
+      The log generates in C:\Snort\log
+      |
+      Example : snort.log118293 -> open the file in Wireshark 
+      |
+    Wireshark Help to determine the incoming IPs
+
+
+step 8
+
+Thank U ! The projectile proforma done
