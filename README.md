@@ -5,7 +5,6 @@ SNORT is a powerful open-source intrusion detection system (IDS) and intrusion p
 
 Maintain the Process Follow As Line Mentioned (Any mistake may issue with connection)*
                                                                                                 OS Type : Windows | Snort V : 2_9_20 (Only IDS)
-1st Segment
 
 At first simply download some tools & config snapshots 
 
@@ -16,9 +15,9 @@ At first simply download some tools & config snapshots
     Download snort rules after login snort website get below snapshots of latest example : snortrules-snapshot-29111.tar.gz
     Download snort community rules of snort V 2.9.tar.gz
 
-                                                                                                                        Extract last both tar.gz in download path
+                                                           Extract last both tar.gz in download path
 
-Steps
+Steps 1
 
 After Extracting the snortrules-snapshot-29111 ->
 Open it ->
@@ -26,3 +25,18 @@ You see rules & preproc_rules -> copy the files -> minimise it
 Check on local disk ( C file ) -> Snort Folder -> Paste there -> Select replace files of both
 
 Open etc -> snort.conf -> open in notepad ++ -> there are some need to set rules (carefully edit) 
+
+
+
+
+Step 2
+
+double click to open the snort installer.exe file -> Install in C folder or Local PC  
+
+
+
+
+
+
+
+
