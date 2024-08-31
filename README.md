@@ -104,4 +104,4 @@ sl.no is not might same because network presence may differ , please check your 
 
 step 8
 
-Thank U ! The projectile proforma done
+Thank guy we hope you get helpful ! Love from Poland
